@@ -37,12 +37,18 @@ public class ReverseWordsInAString {
 
     public static String reverseWords(String s) {
 
+
+        //This trims the leading spaces
         s = s.trim();
 
+        //Converts the String into List and splits the words into different indexes.
         List<String> result = Arrays.asList(s.split("\\s+"));
+
+        //Revereses the words
         Collections.reverse(result);
 
 
+        //Adds the leading spaces
         System.out.println(String.join(" ", result));
         return String.join(" ", result);
     }
